@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                alert($("input").val());
+            });
+            $("#btn2").click(function () {
+                alert($('#pe').text() + " " + $('#pe span').text())
+            });
+            $("#btn3").click(function () {
+                alert($("a").attr('href'));
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+<input type="text" value="I am a string value">
+<button id="btn1">display value of a textbox containing a value of "I am a string value"</button>
+<br>
+
+<p id="pe">paragraph element <span>inherent desendant tags</span></p>
+<button id="btn2">display value of paragraph along with its inherent descendent tags</button>
+
+<br>
+<br>
+<a href="https://youtu.be/dQw4w9WgXcQ">Link</a>
+<button id="btn3"> display value of hyperlink element</button>
+
+</body>
+</html>
